@@ -68,9 +68,9 @@ hi def link     goImaginary  Number
 
 " Token groups
 syn cluster     gotplLiteral     contains=goString,goRawString,goCharacter,@goInt,goFloat,goImaginary
-syn keyword     gotplControl     contained   if else end range with template
+syn keyword     gotplControl     contained   if else end range with template include tpl required
 syn keyword     gotplFunctions   contained   and call html index js len not or print printf println urlquery eq ne lt le gt ge
-syn keyword     goSprigFunctions contained   abbrev abbrevboth add add1 append atoi b64dec b64enc base biggest camelcase cat clean coalesce compact \contains date dateInZone dateModify default derivePassword dict dir div empty ext first float64 fromJson fromYaml genPrivateKey has hasKey hasPrefix hasSuffix htmlDate htmlDateInZone include indent initial initials int int64 isAbs join keys kindIs kindOf last list lower max min mod mul nindent nospace now omit pick pluck plural prepend quote randAlpha randAlphaNum randAscii randNumeric repeat replace required rest reverse set sha256sum shuffle snakecase sortAlpha split splitList squote sub substr swapcase title toJson toPrettyJson toString toStrings toToml toYaml tpl trim trimAll trimPrefix trimSuffix trunc tuple typeIs typeIsLike typeOf uniq unset until untilStep untitle upper without wrap wrapWith
+syn keyword     goSprigFunctions contained   abbrev abbrevboth add add1 append atoi b64dec b64enc base biggest camelcase cat clean coalesce compact \contains date dateInZone dateModify default derivePassword dict dir div empty ext first float64 fromJson fromYaml genPrivateKey has hasKey hasPrefix hasSuffix htmlDate htmlDateInZone indent initial initials int int64 isAbs join keys kindIs kindOf last list lower max min mod mul nindent nospace now omit pick pluck plural prepend quote randAlpha randAlphaNum randAscii randNumeric repeat replace rest reverse set sha256sum shuffle snakecase sortAlpha split splitList squote sub substr swapcase title toJson toPrettyJson toString toStrings toToml toYaml trim trimAll trimPrefix trimSuffix trunc tuple typeIs typeIsLike typeOf uniq unset until untilStep untitle upper without wrap wrapWith
 syn match       gotplVariable    contained   /\$[a-zA-Z0-9_]*\>/
 syn match       goTplIdentifier  contained   /\.[^\s}]+\>/
 
