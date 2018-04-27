@@ -1,7 +1,8 @@
 # vim-helm
 vim syntax for helm templates (yaml + gotmpl + sprig + custom)
 
-Enable syntax using a definition like this:
+Install via vundle:
+
 ```vim
-autocmd BufRead,BufNewFile */templates/*.yaml,*/templates/*.tpl set ft=helm
+Plugin 'towolf/helm-vim'
 ```
