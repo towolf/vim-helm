@@ -81,8 +81,7 @@ hi def link     goTplVariable       Special
 
 syn region gotplAction start="{{\(-? \)\?" end="\( -?\)\?}}" contains=@gotplLiteral,gotplControl,gotplFunctions,goSprigFunctions,gotplVariable,goTplIdentifier containedin=yamlFlowString display
 syn region gotplAction start="\[\[\(-? \)\?" end="\( -?\)\?\]\]" contains=@gotplLiteral,gotplControl,gotplFunctions,goSprigFunctions,gotplVariable containedin=yamlFlowString display
-syn region goTplComment start="{{\(-? \)\?/\*" end="\*/\( -?\)\?}}" display
-syn region goTplComment start="\[\[\(-? \)\?/\*" end="\*/\( -?\)\?\]\]" display
+syn match goTplComment "{{\(-\_s\+\)\?/\*\_.\{-}\*/\(\_s\+-\)\?}}"
 
 hi def link gotplAction PreProc
 hi def link goTplComment Comment
