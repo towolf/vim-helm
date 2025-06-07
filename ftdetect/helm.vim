@@ -16,6 +16,7 @@ function! s:isHelm()
 endfunction
 
 autocmd BufRead,BufNewFile * if s:isHelm() | set ft=helm | endif
+autocmd BufRead,BufNewFile values*.yaml setfiletype yaml.helm-values
 
 " Use {{/* */}} as comments
 autocmd FileType helm setlocal commentstring={{/*\ %s\ */}}
